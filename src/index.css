@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li{
+  margin: 0;
+}
+
+span {
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#Clouds {
+  background-image: url(../public/image/clouds.jpeg);
+}
+
+#Thunderstorm {
+  background-image: url(../public/image/Thunderstorm.jpg);
+}
+
+#Drizzle {
+  background-image: url(../public/image/Drizzle.jpg);
+}
+
+#Rain {
+  background-image: url(../public/image/Rain.jpg);
+}
+
+#Snow {
+  background-image: url(../public/image/Snow.jpg);
+}
+
+#Mist {
+  background-image: url(../public/image/Mist.jpg);
+}
+
+#Smoke {
+  background-image: url(../public/image/Smoke.jpg);
+}
+
+#Haze {
+  background-image: url(../public/image/Haze.jpg);
+}
+
+#Dust {
+  background-image: url(../public/image/Dust.jpg);
+}
+
+#Fog {
+  background-image: url(../public/image/Fog.jpg);
+}
+
+#Sand {
+  background-image: url(../public/image/Sand.jpg);
+}
+
+#Ash {
+  background-image: url(../public/image/Ash.jpg);
+}
+
+#Squall {
+  background-image: url(../public/image/Squall.jpg);
+}
+
+#Tornado {
+  background-image: url(../public/image/Tornado.jpg);
+}
+
+#Clear {
+  background-image: url(../public/image/Clear.jpg);
+}
