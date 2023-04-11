@@ -27,6 +27,7 @@ function App() {
     const error = err => {
       console.log(err);
       setHasError(true)
+      setRemoveLoading(true)
       setHandleError(err)
     }
     navigator.geolocation.getCurrentPosition(success, error);
@@ -48,7 +49,7 @@ function App() {
           })
           .catch(err => console.log(err))
       }
-    }, 2000)
+    }, 1000)
   }, [latLong])
 
 

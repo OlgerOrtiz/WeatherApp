@@ -32,22 +32,18 @@
   user-select: none;
 }
 
-.Card__List {
+.Card__List--info {
+  display: block;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.Card__List--info li{
   display: grid;
   grid-template-columns: 1fr 1fr;
   line-height: 1.4rem;
-  padding: 1rem 0 1rem 1rem;
+  text-align: left;
 }
 
-.Card__List--One {
-  display: block;
-  text-align: start;
-}
-.Card__List--Two {
-  display: block;
-  text-align: start;
-  padding-left: 0.8rem ;
-}
 
 .Card__Button--Temperature {
   padding: 0.6rem 1rem;
