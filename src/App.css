@@ -1,4 +1,12 @@
 
+.App__Content--Input{
+  margin: 1rem 0;
+}
+
+.App__Input{
+  outline: none;
+}
+
 .App__Container--Card{
   background-color: rgba(255, 255, 255, 0.6);
   width: 90%;
@@ -57,7 +65,7 @@
 .Container__Error {
   background-color: black;
   width: 100vw;
-  height: 100vh;  
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;

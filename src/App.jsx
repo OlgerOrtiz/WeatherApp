@@ -15,6 +15,7 @@ function App() {
   const [handleError, setHandleError] = useState()
   const [weathergb, setWeathergb] = useState()
   const [removeLoading, setRemoveLoading] = useState(false)
+  const [searchCity, setSearchCity] = useState('')
 
   useEffect(() => {
     const success = position => {
@@ -41,7 +42,7 @@ function App() {
           .then(res => {
             const celsius = (res.data.main.temp - 273.15).toFixed(1)
             const farenheit = (celsius * 9 / 5 + 32).toFixed(1)
-  
+
             setTemperature({ celsius, farenheit })
             setWeather(res.data)
             setWeathergb(res.data.weather[0].main)
@@ -52,12 +53,33 @@ function App() {
     }, 1000)
   }, [latLong])
 
+  const handleCityChange = e => {
+    setSearchCity(e.target.value)
+  }
 
+  const searchCityWeather = () => {
+    const apiKey = '83bd1e14194bbcbd764e136645bd1c3e'
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=${apiKey}`)
+    .then(res => {
+      const celsius = (res.data.main.temp - 273.15).toFixed(1)
+      const farenheit = (celsius * 9 / 5 + 32).toFixed(1)
+      
+      setTemperature({ celsius, farenheit })
+      setWeather(res.data)
+      setWeathergb(res.data.weather[0].main)
+      setRemoveLoading(true)
+      setHasError(false)
+    })
+      .catch(err => console.log(err))
+  }
 
   return (
     <div className="App" id={weathergb}>
+      <div className="App__Content--Input">
+          <input className='App__Input' type="text" placeholder="Search city" value={searchCity} onChange={handleCityChange} />
+          <button onClick={searchCityWeather}>Search</button>
+      </div>
       <div className='App__Container--Card'>
-        
         {
           hasError
           ? <ErrorFetch handleError={handleError} />
