@@ -10,7 +10,7 @@ const ErrorFetch = ({ handleError }) => {
         <div className="Card__Error--Header">
           <h1 className='Card__Error--Title'>{handleError?.message}</h1>
           <img src="./src/image/icon-location.png" alt="icon-location" />
-          <img src="./src/image/icon-failed.png" alt="icon-failed" />
+          <img src="../src/image/icon-failed.png" alt="icon-failed" />
         </div>
         <p>¡This app requires access to your location! <br />
           Your location will not be shared. <br />
