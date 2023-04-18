@@ -2,9 +2,9 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import './App.css'
-import CardWeather from './assets/components/CardWeather'
-import Loading from './assets/components/Loading'
-import ErrorFetch from './assets/components/ErrorFetch'
+import CardWeather from './components/CardWeather'
+import Loading from './components/Loading'
+import ErrorFetch from './components/ErrorFetch'
 
 function App() {
 
@@ -46,7 +46,7 @@ function App() {
             setTemperature({ celsius, farenheit })
             setWeather(res.data)
             setWeathergb(res.data.weather[0].main)
-            setRemoveLoading(true)
+            // setRemoveLoading(true)
           })
           .catch(err => console.log(err))
       }
