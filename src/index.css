@@ -39,61 +39,61 @@ ul {
 }
 
 #Clouds {
-  background-image: url(../public/image/clouds.jpeg);
+  background-image: url(./src/image/clouds.jpeg);
 }
 
 #Thunderstorm {
-  background-image: url(../public/image/Thunderstorm.jpg);
+  background-image: url(./src/image/Thunderstorm.jpg);
 }
 
 #Drizzle {
-  background-image: url(../public/image/Drizzle.jpg);
+  background-image: url(./src/image/Drizzle.jpg);
 }
 
 #Rain {
-  background-image: url(../public/image/Rain.jpg);
+  background-image: url(./src/image/Rain.jpg);
 }
 
 #Snow {
-  background-image: url(../public/image/Snow.jpg);
+  background-image: url(./src/image/Snow.jpg);
 }
 
 #Mist {
-  background-image: url(../public/image/Mist.jpg);
+  background-image: url(./src/image/Mist.jpg);
 }
 
 #Smoke {
-  background-image: url(../public/image/Smoke.jpg);
+  background-image: url(./src/image/Smoke.jpg);
 }
 
 #Haze {
-  background-image: url(../public/image/Haze.jpg);
+  background-image: url(./src/image/Haze.jpg);
 }
 
 #Dust {
-  background-image: url(../public/image/Dust.jpg);
+  background-image: url(./src/image/Dust.jpg);
 }
 
 #Fog {
-  background-image: url(../public/image/Fog.jpg);
+  background-image: url(./src/image/Fog.jpg);
 }
 
 #Sand {
-  background-image: url(../public/image/Sand.jpg);
+  background-image: url(./src/image/Sand.jpg);
 }
 
 #Ash {
-  background-image: url(../public/image/Ash.jpg);
+  background-image: url(./src/image/Ash.jpg);
 }
 
 #Squall {
-  background-image: url(../public/image/Squall.jpg);
+  background-image: url(./src/image/Squall.jpg);
 }
 
 #Tornado {
-  background-image: url(../public/image/Tornado.jpg);
+  background-image: url(./src/image/Tornado.jpg);
 }
 
 #Clear {
-  background-image: url(../public/image/Clear.jpg);
+  background-image: url(./src/image/Clear.jpg);
 }
