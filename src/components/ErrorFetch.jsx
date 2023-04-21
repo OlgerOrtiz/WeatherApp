@@ -4,11 +4,11 @@ const ErrorFetch = ({ handleError }) => {
     <div className="Container__Error">
       <div className='Card__Content--Error'>
         <div className="Card__Error--Image">
-          <img src="src/assets/image/icon-warning.jpg" alt="icon-Warning" />
+          <img src="/image/icon-warning.jpg" alt="icon-Warning" />
         </div>
         <div className="Card__Error--Header">
           <h1 className='Card__Error--Title'>{handleError?.message}</h1>
-          <img src="assets/image/icon-location.png" alt="icon-location" />
+          <img src="/image/icon-location.png" alt="icon-location" />
           <img src="image/failed.png" alt="icon-failed" />
         </div>
         <p>¡This app requires access to your location! <br />
