@@ -106,7 +106,7 @@
   top: .4rem;
 }
 .Loading{
-  background-image: url(./assets/image/image-loader-bg.png);
+  background-image: url(/image/image-loader-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,7 +118,7 @@
 }
 
 .Loading__Content{
-  background-image: url(./assets/image/image-loader2.png);
+  background-image: url(/image/image-loader2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 300px;
